@@ -68,9 +68,8 @@ kubectl exec <POD-NAME> -c <CONTAINER-NAME> -- <COMMAND>
 ```shell
 kubectl run hostnames --image=k8s.gcr.io/serve_hostname \
                         --labels=app=hostnames \
-                        --port=9376 \
-                        --replicas=3
-deployment.apps/hostnames created
+                        --port=9376
+pod/hostnames created
 ```
 
 `kubectl`コマンドは作成、変更されたリソースのタイプと名前を出力するため、この後のコマンドで使用することもできます。

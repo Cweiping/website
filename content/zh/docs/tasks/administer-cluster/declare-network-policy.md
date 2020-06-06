@@ -36,8 +36,8 @@ content_template: templates/task
 为了查看 Kubernetes 网络策略是怎样工作的，可以从创建一个`nginx` deployment 并且通过服务将其暴露开始
 
 ```console
-$ kubectl run nginx --image=nginx --replicas=2
-deployment "nginx" created
+$ kubectl run nginx --image=nginx
+pod/nginx created
 $ kubectl expose deployment nginx --port=80
 service "nginx" exposed
 ```

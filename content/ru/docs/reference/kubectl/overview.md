@@ -92,7 +92,7 @@ kubectl [command] [TYPE] [NAME] [flags]
 `proxy`        | `kubectl proxy [--port=PORT] [--www=static-dir] [--www-prefix=prefix] [--api-prefix=prefix] [flags]` | Запустить прокси для API Kubernetes.
 `replace`        | `kubectl replace -f FILENAME` | Заменить ресурс из файла или потока stdin.
 `rolling-update`    | <code>kubectl rolling-update OLD_CONTROLLER_NAME ([NEW_CONTROLLER_NAME] --image=NEW_CONTAINER_IMAGE &#124; -f NEW_CONTROLLER_SPEC) [flags]</code> | Выполните плавающее обновление, постепенно заменяя указанный контроллер репликации и его поды.
-`run`        | `kubectl run NAME --image=image [--env="key=value"] [--port=port] [--replicas=replicas] [--dry-run=bool] [--overrides=inline-json] [flags]` | Запустить указанный образ в кластере.
+`run`        | `kubectl run NAME --image=image [--env="key=value"] [--port=port] [--dry-run=bool] [--overrides=inline-json] [flags]` | Запустить указанный образ в кластере.
 `scale`        | <code>kubectl scale (-f FILENAME &#124; TYPE NAME &#124; TYPE/NAME) --replicas=COUNT [--resource-version=version] [--current-replicas=count] [flags]</code> | Обновить размер указанного контроллера репликации.
 `version`        | `kubectl version [--client] [flags]` | Отобразить версию Kubernetes, запущенного на клиенте и сервере.
 

@@ -39,7 +39,7 @@ kubectl:
 kubectl run --image=nginx nginx-app --port=80 --env="DOMAIN=cluster"
 ```
 ```
-deployment "nginx-app" created
+pod/nginx-app created
 ```
 
 {{< note >}}

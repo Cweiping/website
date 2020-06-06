@@ -130,10 +130,10 @@ can follow along and get a second data point.
 ```shell
 $ kubectl run hostnames --image=k8s.gcr.io/serve_hostname \
                         --labels=app=hostnames \
-                        --port=9376 \
-                        --replicas=3
-deployment.apps/hostnames created
+                        --port=9376
+pod/hostnames created
 ```
+TODO
 
 `kubectl` commands will print the type and name of the resource created or mutated, which can then be used in subsequent commands.
 {{< note >}}
@@ -180,9 +180,8 @@ hostnames-632524106-tlaok   1/1       Running   0          2m
 ```shell
 $ kubectl run hostnames --image=k8s.gcr.io/serve_hostname \
                         --labels=app=hostnames \
-                        --port=9376 \
-                        --replicas=3
-deployment.apps/hostnames created
+                        --port=9376
+pod/hostnames created
 ```
 
 `kubectl` 命令将打印创建或变更的资源的类型和名称，它们可以在后续命令中使用。

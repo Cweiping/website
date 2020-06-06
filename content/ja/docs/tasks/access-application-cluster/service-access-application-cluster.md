@@ -34,7 +34,7 @@ weight: 60
 
 1. クラスタでHello Worldアプリケーションを稼働させます:
    ```shell
-   kubectl run hello-world --replicas=2 --labels="run=load-balancer-example" --image=gcr.io/google-samples/node-hello:1.0  --port=8080
+   kubectl run hello-world --labels="run=load-balancer-example" --image=gcr.io/google-samples/node-hello:1.0  --port=8080
    ```
     このコマンドは
     [Deployment](/ja/docs/concepts/workloads/controllers/deployment/)

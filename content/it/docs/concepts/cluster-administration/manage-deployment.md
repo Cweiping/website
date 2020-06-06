@@ -421,8 +421,8 @@ gestita dai controller di replica, dovresti leggere
 Diciamo che stavi usando la versione 1.7.9 di nginx:
 
 ```shell
-$ kubectl run my-nginx --image=nginx:1.7.9 --replicas=3
-deployment.apps/my-nginx created
+$ kubectl run my-nginx --image=nginx:1.7.9
+pod/my-nginx created
 ```
 
 Per aggiornare alla versione 1.9.1, cambia semplicemente `.spec.template.spec.containers [0] .image` da `nginx: 1.7.9`

@@ -420,10 +420,10 @@ Kami akan memandumu untuk membuat dan membarui aplikasi melalui Deployment.
 Misal kamu telah menjalankan nginx versi 1.7.9:
 
 ```shell
-kubectl run my-nginx --image=nginx:1.7.9 --replicas=3
+kubectl run my-nginx --image=nginx:1.7.9
 ```
 ```shell
-deployment.apps/my-nginx created
+pod/my-nginx created
 ```
 
 Untuk memperbarui versi ke 1.9.1, ganti `.spec.template.spec.containers[0].image` dari `nginx:1.7.9` ke `nginx:1.9.1`, dengan perintah kubectl yang telah dipelajari di atas.
